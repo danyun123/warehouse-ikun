@@ -9,7 +9,7 @@ export const activeItemContext = createContext<contextType>({
 });
 
 const KunMenu = memo((props: menuProps) => {
-	const { children,defaultIndex } = props;
+	const { children,defaultIndex,...restProps} = props;
 	const clases = classNames("kun-menu");
 
 	const [activeItem,setActiveItem] = useState(defaultIndex);
@@ -22,7 +22,7 @@ const KunMenu = memo((props: menuProps) => {
 	}
 	return (
 		<MenuStyle>
-			<div className={clases}>
+			<div className={clases} {...restProps}>
 				<activeItemContext.Provider value={currentIndex}>
 					{children}
 				</activeItemContext.Provider>

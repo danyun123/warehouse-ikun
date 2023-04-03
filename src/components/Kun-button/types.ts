@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 import React from "react";
 
-interface ButtonProps {
+interface ButtonTypes {
 	disabled?: boolean,
 	size?: "lg" | "sm",
 	children?: React.ReactNode,
@@ -9,4 +9,4 @@ interface ButtonProps {
 	round?: boolean
 }
 
-export type ButtonPropsType = Partial<React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps>
+export type ButtonProps = Partial<React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonTypes>

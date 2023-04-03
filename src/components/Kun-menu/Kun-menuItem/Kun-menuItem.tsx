@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { alterSubmenuOnClick } from "@/state/menu/index";
 
 const KunMenuItem = memo((props: menuItemProps) => {
-	const { children,index,disabled } = props;
+	const { children,index,disabled,...restProps } = props;
 	const defaultDisabled = disabled ?? false;
 	const clases = classNames("menuItem", {
 		[`menuItem-disabled`]: defaultDisabled
@@ -22,7 +22,9 @@ const KunMenuItem = memo((props: menuItemProps) => {
 		<MenuItemStyle>
 			<div className={
 						classNames(clases,{"isActive": index === currentIndex})}
-					 	onClick={handelOnClick}>
+					 	onClick={handelOnClick}
+					 {...restProps}
+			>
 				{children}
 			</div>
 		</MenuItemStyle>

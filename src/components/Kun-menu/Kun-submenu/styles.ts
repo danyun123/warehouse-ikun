@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const SubmenuStyle = styled.div`
+interface StyleProps {
+	iconSize: string
+}
+
+const SubmenuStyle = styled.div<StyleProps>`
   .submenuBox {
     position: relative;
     .submenu {
@@ -18,8 +22,8 @@ const SubmenuStyle = styled.div`
         &::after {
           content: "";
           color: var(--submenu-icon-color);
-          width: ${(props: any) => props.iconSize ?? "8px"};
-          height: ${(props: any) => props.iconSize ?? "8px"};
+          width: ${(props) => props.iconSize ?? "8px"};
+          height: ${(props) => props.iconSize ?? "8px"};
           border-style: solid;
           border-color: var(--hover-icon-color);
           border-width: 0 2px 2px 0;

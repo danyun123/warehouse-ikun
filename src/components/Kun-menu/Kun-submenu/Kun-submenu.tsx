@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {alterSubmenuOnClick} from "@/state/menu";
 
 const KunSubmenu = memo((props: submenuProps) => {
-	const { disabled, children, iconSize, title } = props;
+	const { disabled, children, iconSize, title,...restProps } = props;
 	const {submenuOnClick} = useSelector((state: any) => {
 		return {
 			submenuOnClick: state.menuReducer.submenuOnClick
@@ -56,7 +56,7 @@ const KunSubmenu = memo((props: submenuProps) => {
 	return (
 		// @ts-ignore
 		<SubmenuStyle iconSize={iconSize}>
-			<div className="submenuBox">
+			<div className="submenuBox" {...restProps}>
 				<div
 					className={clases}
 					onMouseOver={e => handelParentMouseEnter(e)}

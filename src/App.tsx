@@ -1,13 +1,11 @@
-import { memo } from "react";
-import KunIcon from "@/components/Kun-icon/Kun-icon";
-
+import React, { memo } from "react";
 
 const App = memo(() => {
-  return (
-    <div className="app">
-      <KunIcon icon="coffee" size="2x" type="danger"/>
-    </div>
-  )
-})
+	return (
+		<div className="app">
+
+		</div>
+	);
+});
 
 export default App;

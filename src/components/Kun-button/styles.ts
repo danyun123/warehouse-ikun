@@ -5,7 +5,7 @@ const ButtonStyle = styled.div`
   display: inline-block;
   margin: 1px;
 
-  .btn {
+  .kun-btn {
     position: relative;
     display: inline-block;
     font-weight: var(--btn-font-weight);

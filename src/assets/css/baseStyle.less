@@ -4,7 +4,7 @@
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
-  --gray-400: #ced4da;
+  --gray-400: #97999b;
   --gray-500: #adb5bd;
   --gray-600: #6c757d;
   --gray-700: #495057;
@@ -73,6 +73,7 @@
   --body-bg: var(--white);
   --body-color: var(--gray-900);
   --body-text-align: null;
+  --disabled-bgc: #d2d2d8;
 
   --spacer: 1rem;
   --headings-margin-bottom: calc(var(--spacer) / 2);
@@ -145,6 +146,67 @@
   --submenu-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
   --submenu-icon-color: #807f7f;
   --submenu-transition: .3s linear;
+
+  //input
+  --input-padding-y: 4px;
+  --input-padding-x: 11px;
+  --input-font-family: var(--btn-font-family);
+  --input-font-size: var(--font-size-base);
+  --input-font-weight: var(--font-weight-base);
+  --input-line-height: var(--btn-line-height);
+
+  --input-padding-y-sm: 0;
+  --input-padding-x-sm: 11px;
+  --input-font-size-sm: .8rem;
+  --input-padding-y-lg: 7px;
+  --input-padding-x-lg: 11px;
+  --input-font-size-lg: 1.2rem;
+
+  --input-bg: var(--white);
+  --input-disabled-bg: var(--disbled-bgc);
+  --input-disabled-border-color: null;
+
+  --input-color: #1c1b1b;
+  --input-border-color: #c9c9c9;
+  --input-border-width: var(--border-width);
+  --input-box-shadow: 0 0 2px 1px #92c0ff;
+
+  --input-border-radius: 5px;
+  --input-border-radius-lg: var(--border-radius-lg);
+  --input-border-radius-sm: var(--border-radius-sm);
+
+  --input-focus-bg: var(--input-bg);
+  --input-focus-border-color: calc(var(--primary), 25%);
+  --input-focus-width: .2rem;
+  --input-focus-color: var(--input-color);
+  --input-focus-shadow-color: rgba(var(--primary), .25);
+  --input-focus-box-shadow: 0 0 0 var(--input-focus-width) var(--input-focus-shadow-color);
+
+  --input-placeholder-color: var(--gray-600);
+  --input-plaintext-color: var(--body-color);
+
+  --input-height-border: calc(var(--input-border-width) * 2);
+
+  --input-transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+  --input-group-addon-color: var(--input-color);
+  --input-group-addon-bg: var(--gray-200);
+  --input-group-addon-border-color: var(--input-border-color);
+
+  --input-connet-bgc: rgb(238, 235, 235);
+  --input-connet-border-color: rgb(208, 206, 206);
+
+  //自动化输入框
+  --autoInput-border-width: 1px;
+  --autoInput-border-color: var(--input-border-color);
+  --autoInput-padding: 5px 11px;
+  --autoInput-border-raduis: var(--input-border-radius);
+  --autoInput-box-shadow: 0 0 3px 1px var(--input-border-color);
+
+  //走马灯
+  --carousel-transition: .2s ease-in-out;
+  --carousel-hover-scale: 1.2;
+  --carousel-active-scale: 1.3;
 }
 
 

@@ -1,6 +1,6 @@
 import {render,fireEvent} from "@testing-library/react";
 import KunButton from "./Kun-button";
-import { ButtonPropsType } from "./types"
+import { ButtonProps } from "./types"
 import '@testing-library/jest-dom'
 import React from "react";
 
@@ -9,13 +9,13 @@ const defaultProps = {
 	onClick: jest.fn()
 }
 
-const testProps: ButtonPropsType = {
+const testProps: ButtonProps = {
 	btnType: 'danger',
 	size: 'lg',
 	round: true,
 }
 
-const disabledProps: ButtonPropsType = {
+const disabledProps: ButtonProps = {
 	disabled: true,
 	onClick: jest.fn(),
 }

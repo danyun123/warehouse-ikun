@@ -1,15 +1,15 @@
 import { memo } from "react";
 import React from "react";
-import type { ButtonPropsType } from "./types";
+import type { ButtonProps } from "./types";
 import classNames from "classnames";
 import ButtonStyle from "./styles";
 
-const KunButton = memo((props: ButtonPropsType): JSX.Element => {
+const KunButton = memo((props: ButtonProps) => {
 	const { children, size, disabled, btnType,round, ...restPorps } = props;
 	const disabledDefault = disabled ?? false;
 	const btnTypeDefault = btnType ?? "default";
 	const classes = classNames(
-		"btn",
+		"kun-btn",
 		{
 			[`btn-${btnTypeDefault}`]: btnTypeDefault,
 			[`btn-${size}`]: size,
