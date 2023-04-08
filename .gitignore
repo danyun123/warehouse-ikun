@@ -10,6 +10,7 @@
 
 # production
 /build
+/dumi/dist
 
 # misc
 .DS_Store

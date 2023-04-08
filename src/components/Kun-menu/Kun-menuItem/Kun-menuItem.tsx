@@ -1,4 +1,4 @@
-import { memo, useContext } from "react";
+import React, { memo, useContext } from "react";
 import { menuItemProps } from "./types";
 import classNames from "classnames";
 import MenuItemStyle from "./styles";

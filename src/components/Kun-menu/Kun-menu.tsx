@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import React, { memo, useState } from "react";
 import classNames from "classnames";
 import { menuProps,contextType } from "./types";
 import MenuStyle from "./styles";

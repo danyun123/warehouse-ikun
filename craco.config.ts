@@ -17,6 +17,12 @@ module.exports = {
 			"components": resolve("src/components"),
 			"utils": resolve("src/utils")
 		},
+		rules: [
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
 	}
 }
 

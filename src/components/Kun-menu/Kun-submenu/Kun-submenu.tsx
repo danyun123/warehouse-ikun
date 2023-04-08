@@ -1,4 +1,4 @@
-import { memo, useRef, useState } from "react";
+import  React,{ memo, useRef, useState } from "react";
 import { submenuProps } from "./types";
 import classNames from "classnames";
 import SubmenuStyle from "./styles";

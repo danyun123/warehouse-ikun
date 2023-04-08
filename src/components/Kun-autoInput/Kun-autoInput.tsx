@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChangeEvent, memo, SyntheticEvent, useState } from "react";
 import { autoInputProps } from "./types";
 import classNames from "classnames";

@@ -1,5 +1,6 @@
+import React from 'react';
 import { memo } from "react";
-import iconProps from "@/components/Kun-icon/types";
+import iconProps from "./types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import { IconStyle } from "./style";

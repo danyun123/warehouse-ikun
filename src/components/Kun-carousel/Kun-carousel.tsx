@@ -1,7 +1,7 @@
 import React, { memo, ReactNode, useEffect, useState, useRef, SyntheticEvent } from "react";
 import classNames from "classnames";
 import CarouselStyle from "./styles";
-import { CarouselProps } from "@/components/Kun-carousel/types";
+import { CarouselProps } from "./types";
 import KunIcon from "../Kun-icon/Kun-icon";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
