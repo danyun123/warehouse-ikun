@@ -31,8 +31,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "react-scripts build",
-    "build-ts": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dumi": "cross-env APP_ROOT=dumi dumi dev",
