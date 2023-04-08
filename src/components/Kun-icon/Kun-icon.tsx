@@ -3,15 +3,17 @@ import iconProps from "@/components/Kun-icon/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import { IconStyle } from "./style";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 const KunIcon = memo((props: iconProps) => {
-	const { type, ...restProps } = props;
+	const { type, icon, ...restProps } = props;
 	const clases = classNames("kun-icon", {
 		[`icon-${type}`]: type
 	});
 	return (
 		<IconStyle>
-			<FontAwesomeIcon className={clases} {...restProps} />
+			<FontAwesomeIcon icon={icon as IconProp} className={clases} {...restProps} />
 		</IconStyle>
 	);
 });

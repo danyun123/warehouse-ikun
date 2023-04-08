@@ -61,4 +61,8 @@ a {
 img {
   vertical-align: top;
 }
+button:focus {
+  outline: none !important;
+}
+
 /*# sourceMappingURL=reset.css.map */

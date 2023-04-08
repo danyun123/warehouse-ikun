@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const IconStyle = styled.div`
+	display: inline-block;
   .icon-primary {
     color: var(--primary);
   }

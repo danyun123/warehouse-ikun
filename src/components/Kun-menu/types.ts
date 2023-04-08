@@ -7,7 +7,6 @@ export interface contextType {
 
 
 interface menuTypes {
-	children?: React.ReactNode,
 	defaultIndex?: string
 }
 

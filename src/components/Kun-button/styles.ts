@@ -63,7 +63,7 @@ const ButtonStyle = styled.div`
 
   .btn-default {
     border: 1px solid;
-    ${btnType("--white", "--gray-500", "--black", null, "--pri1mary")}
+    ${btnType("--white", "--gray-500", "--black", null)}
   }
 
   .btn-danger {
@@ -72,7 +72,7 @@ const ButtonStyle = styled.div`
 
   .btn-round {
     min-width: 32px;
-    padding: 4px 0;
+    padding: 3px 0;
     padding-inline-start: 0;
     padding-inline-end: 0;
     border-radius: 50%;

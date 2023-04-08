@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const InputStyle = styled.div`
   width: auto;
-  display: inline-block;
   .kun-input {
     display: inline-flex;
     vertical-align: center;
@@ -85,7 +84,19 @@ const InputStyle = styled.div`
   }
 
   .input-disabled {
-    ${props => props.theme.disabledStyle};
+      cursor: not-allowed;
+      opacity: .5 !important;
+      background: var(--disabled-bgc);
+      border: none;
+      :hover,
+      :active,
+      :focus {
+          border:none;
+      }
+      * {
+          pointer-events: none;
+          background: var(--disabled-bgc);
+      }
   }
 `;
 

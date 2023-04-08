@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --gray-100: #f8f9fa;
+  --gray-100: #fafaf8;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
   --gray-400: #97999b;
@@ -70,12 +70,12 @@
   --border-radius-lg: 0.3rem;
   --border-radius-sm: 0.2rem;
   --btn-font-weight: 400;
-  --btn-padding-y: 0.37rem;
+  --btn-padding-y: 0.28rem;
   --btn-padding-x: 0.7rem;
   --btn-font-family: var(--font-family-base);
   --btn-font-size: var(--font-size-base);
   --btn-line-height: var(--line-height-base);
-  --btn-padding-y-sm: 0.22rem;
+  --btn-padding-y-sm: 0.2rem;
   --btn-padding-x-sm: 0.45rem;
   --btn-font-size-sm: var(--font-size-sm);
   --btn-padding-y-lg: 0.5rem;

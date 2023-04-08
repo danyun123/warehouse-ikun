@@ -3,7 +3,7 @@ import { submenuProps } from "./types";
 import classNames from "classnames";
 import SubmenuStyle from "./styles";
 import { useDispatch, useSelector } from "react-redux";
-import {alterSubmenuOnClick} from "@/state/menu";
+import {alterSubmenuOnClick} from "../../../state/menu";
 
 const KunSubmenu = memo((props: submenuProps) => {
 	const { disabled, children, iconSize, title,...restProps } = props;

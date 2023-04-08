@@ -7,9 +7,9 @@ import {
 	SyntheticEvent,
 	KeyboardEvent
 } from "react";
-import { inputProps } from "@/components/Kun-input/type";
+import { inputProps } from "./type";
 import classNames from "classnames";
-import InputStyle from "@/components/Kun-input/style";
+import InputStyle from "./style";
 
 const KunInput = memo((props: inputProps) => {
 	const {

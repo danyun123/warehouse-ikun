@@ -1,8 +1,8 @@
 import { ChangeEvent, memo, SyntheticEvent, useState } from "react";
-import { autoInputProps } from "@/components/Kun-autoInput/types";
+import { autoInputProps } from "./types";
 import classNames from "classnames";
-import KunInput from "@/components/Kun-input/Kun-input";
-import AutoInputStyle from "@/components/Kun-autoInput/style";
+import KunInput from "../Kun-input/Kun-input";
+import AutoInputStyle from "./style";
 
 const KunAutoInput = memo((props: autoInputProps) => {
 	const {
@@ -37,6 +37,7 @@ const KunAutoInput = memo((props: autoInputProps) => {
 		handelValueChange(event as ChangeEvent);
 	};
 	const handelOptions = (event: SyntheticEvent, isCLick: boolean = false, value?: string) => {
+		setKeyIndex(-1);
 		if (isCLick && value) {
 			setValue(value);
 			setoptions([]);
@@ -47,7 +48,7 @@ const KunAutoInput = memo((props: autoInputProps) => {
 		switch (key) {
 			case "Enter": {
 				if (enterKeyDown) {
-					enterKeyDown(key);
+					enterKeyDown();
 				}
 				setoptions(null);
 				setShowOptions(false);
@@ -55,12 +56,18 @@ const KunAutoInput = memo((props: autoInputProps) => {
 			}
 			case "ArrowDown": {
 				if (!options || currentKeyIndex === (options?.length as number) - 1) break;
+				if(selectOptions) {
+					selectOptions(options[currentKeyIndex + 1]);
+				}
 				setKeyIndex(currentKeyIndex + 1);
 				setValue(options[currentKeyIndex + 1]);
 				break;
 			}
 			case "ArrowUp": {
 				if (!options || currentKeyIndex === 0) break;
+				if(selectOptions) {
+					selectOptions(options[currentKeyIndex - 1]);
+				}
 				setKeyIndex(currentKeyIndex - 1);
 				setValue(options[currentKeyIndex - 1]);
 				break;

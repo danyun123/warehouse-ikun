@@ -1,5 +1,4 @@
 import { memo } from "react";
-import React from "react";
 import type { ButtonProps } from "./types";
 import classNames from "classnames";
 import ButtonStyle from "./styles";

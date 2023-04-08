@@ -4,7 +4,7 @@ import classNames from "classnames";
 import MenuItemStyle from "./styles";
 import {activeItemContext} from "../Kun-menu";
 import { useDispatch } from "react-redux";
-import { alterSubmenuOnClick } from "@/state/menu/index";
+import { alterSubmenuOnClick } from "../../../state/menu/index";
 
 const KunMenuItem = memo((props: menuItemProps) => {
 	const { children,index,disabled,...restProps } = props;
