@@ -15,6 +15,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ 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 }}
           # 文档目录，如果是 react 模板需要修改为 docs-dist
           publish_dir: ./dumi/dist
