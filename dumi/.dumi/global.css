@@ -1,0 +1,14 @@
+.dumi-default-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 66px;
+  height: 66px;
+}
+.dumi-default-logo img {
+  width: 66px !important;
+  height: 66px !important;
+}
+.dumi-default-doc-layout > main {
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=global.css.map */
