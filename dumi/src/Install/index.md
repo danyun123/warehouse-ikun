@@ -9,4 +9,8 @@ nav:
     order: 1
 ---
 # 安装
-dsajdhjsa
+<pre style="background-color: rgb(167,201,197); font-size: 16px">
+  <code>
+    npm install warehouse-ikun
+  </code>
+</pre>

@@ -34,6 +34,7 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "dumi:build": "cross-env APP_ROOT=dumi/dist dumi dev",
     "dumi": "cross-env APP_ROOT=dumi dumi dev",
     "dumi-build": "cross-env APP_ROOT=dumi dumi build"
   },

@@ -16,7 +16,7 @@ icon实质为 svg 图标
 
 
 ## 安装
-<pre style="background-color: rgb(208,255,251); font-size: 16px">
+<pre style="background-color: rgb(167,201,197); font-size: 16px">
   <code>
     npm i @fortawesome/fontawesome-svg-core --save
     npm i @fortawesome/free-solid-svg-icons --save
@@ -45,7 +45,7 @@ export default Foo;
 需要在 react 主文件 index.tsx 中配置如下，即可在全局导入所有的组件
 此时可以使用字符串表示 icon
 
-<pre style="background-color: rgb(208,255,251); font-size: 16px">
+<pre style="background-color: rgb(167,201,197); font-size: 16px">
   <code>
     import {library} from "@fortawesome/fontawesome-svg-core";
     import {fas} from "@fortawesome/free-solid-svg-icons";
